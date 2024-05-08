@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 
 const Dashboard = () => {
@@ -115,8 +116,28 @@ const Dashboard = () => {
           ))}
         </tbody>
       </table>
+=======
+
+
+import React from 'react';
+
+import NavBar from '../Components/Navbar';
+
+
+function Dashboard() {
+  return (
+    <div>
+
+        <NavBar/>
+
+      <h2>Dashboard</h2>
+      <p>Welcome to the Dashboard!</p>
+      <p>Brian feel free to delete the contents of this component, this was just a placeholder</p>
+>>>>>>> 15323b043539b8a1ed0a8d1da463b441fe8b168c
     </div>
   );
 };
 
+
 export default Dashboard;
+
