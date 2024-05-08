@@ -12,13 +12,32 @@ function HistoryPage({ task }) {
 
     const historyTaskList = completedTasks.map((completedTask) => {
         return (
-            <div>
-
-            </div>
+            <tr key={completedTask.id}>
+                <td>{completedTask.time}</td>
+                <td>{completedTask.name}</td>
+                <td>{completedTask.description}</td>
+            </tr>
         )
     })
 
-    return 
+    return (
+        <div>
+            <table className='history table'>
+                <tr>
+                    <th>
+                        <h3 className='history table headings'>Time</h3>
+                    </th>
+                    <th>
+                        <h3 className='history table headings'>Name</h3>
+                    </th>
+                    <th>
+                        <h3 className='history table headings'>Description</h3>
+                    </th>
+                </tr>
+                {historyTaskList}
+            </table>
+        </div>
+    )
 }
 
 export default HistoryPage;
