@@ -19,6 +19,11 @@
       "id": "hansolo@example.com",
       "name": "Han Solo",
       "password": "StarWars"
+    },
+    {
+      "id": "antogachie@gmail.com",
+      "name": "Anthony",
+      "password": "Chelsea"
     }
   ]
 }
