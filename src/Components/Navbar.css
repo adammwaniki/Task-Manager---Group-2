@@ -6,9 +6,10 @@
 
 .nav-link{
     text-decoration: none;
-    font-size: min(10vw, 15px);
+    font-size: min(10vw, 30px);
     cursor: pointer;
 }
+
 .nav-link:hover{
     color: #808080;
 }
@@ -17,7 +18,15 @@
     color: #000000; 
   }
   
-  .active {
+.active {
     color: #8B4513;
   }
+  
+ul {
+    list-style-type: none;
+  }
+
+ul li {
+    margin-bottom: 15px;
+}
   

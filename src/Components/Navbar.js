@@ -4,26 +4,24 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   
+  
   return (
     <nav>
       <ul className="navbar">
         <li>
-          <NavLink to="/">Sign Up</NavLink>
+          <NavLink to="/" className="nav-link">Sign Up</NavLink>
         </li>
         <li>
-          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/login" className="nav-link">Login</NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard" >Dashboard</NavLink>
+          <NavLink to="/dashboard" className="nav-link">Dashboard</NavLink>
         </li>
         <li>
-          <NavLink to="/create-new-task" >Create New Task</NavLink>
+          <NavLink to="/create-new-task" className="nav-link">Create New Task</NavLink>
         </li>
         <li>
-          <NavLink to="/history" >History</NavLink>
-        </li>
-        <li>
-          <NavLink to="/logout">Logout</NavLink>
+          <NavLink to="/history" className="nav-link">History</NavLink>
         </li>
       </ul>
     </nav>
