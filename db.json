@@ -24,6 +24,11 @@
       "id": "antogachie@gmail.com",
       "name": "Anthony",
       "password": "Chelsea"
+    },
+    {
+      "id": "brian@gmail.com",
+      "name": "brian ",
+      "password": "1234"
     }
   ]
 }
