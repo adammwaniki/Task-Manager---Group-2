@@ -6,7 +6,7 @@ function HistoryPage({ task }) {
 
     function handleCompletedTasks() {
         const completedTaskList = completedTasks.filter((completedTask) => {completedTask.id !== clickedTask.id})
-        setCompletedTasks([...completedTasks, clickedTask])
+        setCompletedTasks([...completedTaskList, clickedTask])
         console.log(clickedTask)
     }
 
@@ -23,18 +23,16 @@ function HistoryPage({ task }) {
     return (
         <div>
             <table className='history table'>
-                <tr>
-                    <th>
-                        <h3 className='history table headings'>Time</h3>
-                    </th>
-                    <th>
-                        <h3 className='history table headings'>Name</h3>
-                    </th>
-                    <th>
-                        <h3 className='history table headings'>Description</h3>
-                    </th>
-                </tr>
-                {historyTaskList}
+                <thead>
+                    <tr>
+                        <th className='history table headings'>Time</th>
+                        <th className='history table headings'>Name</th>
+                        <th className='history table headings'>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {historyTaskList}
+                </tbody>
             </table>
         </div>
     )
