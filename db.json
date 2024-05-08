@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "user1@example.com",
+      "name": "John Doe",
+      "password": "password123"
+    },
+    {
+      "id": "user2@example.com",
+      "name": "Jane Smith",
+      "password": "qwerty456"
+    },
+    {
+      "id": "adam@gmail.com",
+      "name": "adam",
+      "password": "passme"
+    },
+    {
+      "id": "hansolo@example.com",
+      "name": "Han Solo",
+      "password": "StarWars"
+    },
+    {
+      "id": "antogachie@gmail.com",
+      "name": "Anthony",
+      "password": "Chelsea"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    padding: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: min(10vw, 15px);
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: #808080;
+}
+
+.active-link {
+    color: #000000; 
+  }
+  
+  .active-link.active {
+    color: #8B4513;
+  }
+  

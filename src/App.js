@@ -1,12 +1,21 @@
-// This will be our parent component for all the other components
-// This is the component that will be exported into the index.js file to be rendered in the root
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUpForm from './Pages/SignUpForm';
+import LoginForm from './Pages/LoginForm';
+import Dashboard from './Pages/Dashboard';
+//import NavBar from './Components/Navbar';
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      {/*Insert some code in this fragment*/}
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SignUpForm />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
