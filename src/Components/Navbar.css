@@ -13,11 +13,11 @@
     color: #808080;
 }
 
-.active-link {
+.active {
     color: #000000; 
   }
   
-  .active-link.active {
+  .active {
     color: #8B4513;
   }
   
