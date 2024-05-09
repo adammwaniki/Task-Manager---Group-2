@@ -11,6 +11,7 @@ const Task = ({ task, onComplete, onDelete }) => {
   );
 };
 
+
 // Dashboard Component
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -33,7 +34,6 @@ const Dashboard = () => {
     const completedTask = tasks[index];
     removeTask(index);
     // Send completed task to history component
-    // (You would need to implement the history component separately)
     console.log('Completed Task:', completedTask);
   };
 
@@ -71,11 +71,12 @@ const Dashboard = () => {
         </tbody>
       </table>
       <NewTasks onAddTask={addTask} />
+
     </div>
   );
 };
 
-// NewTasks Component
+// NewTasks Component done by Austin 
 const NewTasks = ({ onAddTask }) => {
   const [newTask, setNewTask] = useState('');
 
