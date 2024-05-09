@@ -9,12 +9,6 @@ function NavBar() {
     <nav>
       <ul className="navbar">
         <li>
-          <NavLink to="/" className="nav-link">Sign Up</NavLink>
-        </li>
-        <li>
-          <NavLink to="/login" className="nav-link">Login</NavLink>
-        </li>
-        <li>
           <NavLink to="/dashboard" className="nav-link">Dashboard</NavLink>
         </li>
         <li>
@@ -22,6 +16,9 @@ function NavBar() {
         </li>
         <li>
           <NavLink to="/history" className="nav-link">History</NavLink>
+        </li>
+        <li>
+          <NavLink to="/" className="nav-link">Logout</NavLink>
         </li>
       </ul>
     </nav>
