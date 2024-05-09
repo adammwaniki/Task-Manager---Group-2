@@ -54,7 +54,12 @@ const LoginForm = () => {
         } else if (user.password !== password) {
           alert('Invalid password.');
         } else {
-          navigate('/dashboard'); // Redirect to dashboard on successful login
+          //navigate('/dashboard'); // Redirect to dashboard on successful login
+          // Set user data in local storage
+          //localStorage.setItem('user', JSON.stringify(user));
+          // Upon successful login, store the email in local storage
+          localStorage.setItem('loggedInUser', formData.email);
+          navigate('/dashboard');
         }
       })
       .catch((error) => console.error('Error logging in:', error));
@@ -72,4 +77,6 @@ const LoginForm = () => {
   );
 };
 
+
 export default LoginForm;
+
