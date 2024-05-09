@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import UserProfile from "../Components/UserProfile"
+import NavBar from "../Components/Navbar"
 
 // Task Component
 const Task = ({ task, onComplete, onDelete }) => {
   return (
     <tr>
       <td>{task}</td>
-      <td><button onClick={onComplete}>Complete</button></td>
-      <td><button onClick={onDelete}>Delete</button></td>
+      <td><button className="dashboard-button" onClick={onComplete}>Complete</button></td>
+      <td><button className="dashboard-button" onClick={onDelete}>Delete</button></td>
     </tr>
   );
 };
@@ -43,35 +45,37 @@ const Dashboard = () => {
   );
 
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <input
-        type="text"
-        placeholder="Search tasks..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <table>
-        <thead>
-          <tr>
-            <th>Task</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredTasks.map((task, index) => (
-            <Task
-              key={index}
-              task={task}
-              onComplete={() => completeTask(index)}
-              onDelete={() => removeTask(index)}
-            />
-          ))}
-        </tbody>
-      </table>
-      <NewTasks onAddTask={addTask} />
-
+    <div className="dashboard-container">
+      <div className="dashboard-card">
+        <h1>Dashboard</h1>
+        <input
+          className="dashboard-input"
+          type="text"
+          placeholder="Search tasks..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <table className="dashboard-table">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredTasks.map((task, index) => (
+              <Task
+                key={index}
+                task={task}
+                onComplete={() => completeTask(index)}
+                onDelete={() => removeTask(index)}
+              />
+            ))}
+          </tbody>
+        </table>
+        <NewTasks onAddTask={addTask} />
+      </div>
     </div>
   );
 };
@@ -89,15 +93,21 @@ const NewTasks = ({ onAddTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={newTask}
-        onChange={(e) => setNewTask(e.target.value)}
-        placeholder="Enter new task..."
-      />
-      <button type="submit">Add Task</button>
-    </form>
+    <>
+    <NavBar />
+    <UserProfile/>
+      <div className='dashboard-tasks'>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={newTask}
+          onChange={(e) => setNewTask(e.target.value)}
+          placeholder="Enter new task..."
+        />
+        <button className="dashboard-button" type="submit">Add Task</button>
+      </form>
+      </div>
+    </>
   );
 };
 
