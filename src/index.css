@@ -1,1 +1,148 @@
+/* User Profile Component styling */
+.userCardContainer {
+    position: fixed;
+    top: 25px; 
+    right: 30px; 
+    z-index: 999; 
+}
 
+.userCard {
+    background-color: #fba0e3 ; /* Background color */
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    width: 200px;
+    display: inline-block;
+}
+
+.userCardImage {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%; /*makes the image circular*/
+    margin-bottom: 10px;
+}
+
+.userCardTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.userCardText {
+    font-family: inherit;
+    color: hsl(0, 0%, 30%);
+}
+
+/*User Profile component styling ends*/
+
+/*Dashboard Styling starts*/
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(#fba0e3, white); /* Radial gradient background */
+  }
+  
+  .dashboard-card {
+    width: 50%; 
+    max-width: 400px; 
+    margin: auto; /* Center horizontally */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px;
+  }
+  
+  .dashboard-input {
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-button {
+    background-color: #fba0e3; /* Button color */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #d48aa9; /* Button color on hover */
+  }
+  
+  .dashboard-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+
+/*Dashboard Styling ends*/
+
+/* Login and SignUp Component Styling begins */
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(#fba0e3, white); /* Radial gradient background */
+  }
+  
+  .login-form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px;
+  }
+  
+  .login-input {
+    margin-bottom: 20px;
+    width: calc(100% - 40px); /* 100% of width minus padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: calc(100% - 40px); /* 100% of width minus padding */
+    padding: 10px;
+    margin-top: 10px; /* Adding a margin to separate buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #fba0e3; /* Button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-up-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px; 
+    color: #808080;
+  }
+  
+  .sign-up-link:hover {
+    color: #000000;
+  }
+  
+
+/* Login Component Styling ends */
