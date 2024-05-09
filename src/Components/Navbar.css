@@ -1,0 +1,34 @@
+
+.navbar{
+    position: fixed;
+    left: 0;
+    padding: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: min(10vw, 30px);
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: #808080;
+}
+
+.active {
+    color: #000000; 
+  }
+  
+.active {
+    color: #8B4513;
+  }
+  
+ul {
+    list-style-type: none;
+  }
+
+ul li {
+    margin-bottom: 15px;
+}
+
+  
