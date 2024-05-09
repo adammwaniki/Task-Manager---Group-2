@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 
 const UserProfile = () => {
@@ -65,5 +66,6 @@ const UserProfile = () => {
     </div>
   );
 };
+
 
 export default UserProfile;

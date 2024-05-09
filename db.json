@@ -26,9 +26,15 @@
       "password": "Chelsea"
     },
     {
+
+      "id": "j@gmail.com",
+      "name": "Anthony",
+      "password": "2023"
+
       "id": "nellyachieng88@gmail.com",
       "name": "nelly",
       "password": "1234"
+
     }
   ]
 }
