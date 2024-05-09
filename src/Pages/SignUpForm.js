@@ -66,7 +66,16 @@ const SignUpForm = () => {
     })
       .then((response) => {
         if (response.ok) {
-          navigate('/dashboard'); // Redirect to dashboard on successful signup
+          //navigate('/dashboard'); // Redirect to dashboard on successful signup
+          // Updating the user state in the App component
+          //setUser({
+            //id: email,
+            //name,
+            //password,
+          //});
+          // Upon successful signup, store the email in local storage
+          localStorage.setItem('loggedInUser', formData.email);
+          navigate('/dashboard');
         } else {
           alert('Failed to sign up. Please try again later.');
         }
@@ -87,4 +96,3 @@ const SignUpForm = () => {
 
 
 export default SignUpForm;
-
