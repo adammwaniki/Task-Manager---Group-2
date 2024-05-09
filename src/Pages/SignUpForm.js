@@ -84,12 +84,14 @@ const SignUpForm = () => {
   };
 
   return (
-    <div>
-      <input type="text" name="name" placeholder="Name" onChange={handleInputChange} />
-      <input type="email" name="email" placeholder="Email" onChange={handleInputChange} />
-      <input type="password" name="password" placeholder="Password" onChange={handleInputChange} />
-      <button onClick={handleSignUp}>Sign Up</button>
-      <Link to="/login">Login</Link>
+    <div className="login-form-container">
+      <div className="login-form-card">
+        <input className="login-input" type="text" name="name" placeholder="Name" onChange={handleInputChange} />
+        <input className="login-input" type="email" name="email" placeholder="Email" onChange={handleInputChange} />
+        <input className="login-input" type="password" name="password" placeholder="Password" onChange={handleInputChange} />
+        <button className="login-button" onClick={handleSignUp}>Sign Up</button>
+        <Link className="sign-up-link" to="/login">Login</Link>
+      </div>
     </div>
   );
 };

@@ -68,11 +68,13 @@ const LoginForm = () => {
   
 
   return (
-    <div>
-      <input type="email" name="email" placeholder="Email" onChange={handleInputChange} />
-      <input type="password" name="password" placeholder="Password" onChange={handleInputChange} />
-      <button onClick={handleLogin}>Login</button>
-      <Link to="/">Sign Up</Link>
+    <div className="login-form-container">
+      <div className="login-form-card">
+        <input className="login-input" type="email" name="email" placeholder="Email" onChange={handleInputChange} />
+        <input className="login-input" type="password" name="password" placeholder="Password" onChange={handleInputChange} />
+        <button className="login-button" onClick={handleLogin}>Login</button>
+        <Link className="sign-up-link" to="/">Sign Up</Link>
+      </div>
     </div>
   );
 };
