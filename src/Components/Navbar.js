@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
@@ -13,9 +12,6 @@ function NavBar() {
           <NavLink to="/dashboard" className="nav-link">Dashboard</NavLink>
         </li>
         <li>
-          <NavLink to="/create-new-task" className="nav-link">Create New Task</NavLink>
-        </li>
-        <li>
           <NavLink to="/history" className="nav-link">History</NavLink>
         </li>
         <li>
@@ -27,4 +23,3 @@ function NavBar() {
 }
 
 export default NavBar;
-

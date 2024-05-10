@@ -103,6 +103,7 @@ const Dashboard = ({ moveTaskToHistory }) => {
           <thead>
             <tr>
               <th>Task</th>
+
               <th>Description</th>
               <th>Action</th>
             </tr>
@@ -166,35 +167,4 @@ const NewTasks = ({ onAddTask }) => {
   );
 };
 
-/*
-// The History component 
-const History = ({ tasks = [], moveTaskToDashboard, deleteTask }) => {
-  return (
-    <div className="history-container">
-      <h1>History</h1>
-      <table className="history-table">
-        <thead>
-          <tr>
-            <th>Task</th>
-            <th>Description</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tasks.map((task, index) => (
-            <Task
-              key={index}
-              task={task.task}
-              description={task.description}
-              onComplete={() => moveTaskToDashboard(task)}
-              onDelete={() => deleteTask(index)}
-              actionLabel="Incomplete"
-            />
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-};
-*/
 export default Dashboard;

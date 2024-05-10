@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const UserProfile = () => {
@@ -47,12 +46,12 @@ const UserProfile = () => {
   }, [])
 
   return (
-    <div>
+    <div className='userCardContainer'>
       {user ? (
-        <div>
-          <img src={imageUrl} alt="random user" />
-          <h2>{user.name}</h2>
-          <p>{user.id}</p>
+        <div className='userCard'>
+          <img className='userCardImage' src={imageUrl} alt="random user" />
+          <h2 className='userCardTitle'>{user.name}</h2>
+          <p className='userCardText'>{user.id}</p>
         </div>
       ) : (
         <p>Loading user profile...</p>
